@@ -1,0 +1,336 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main { 
+  background-color: #176aa1;  
+  position: relative; 
+  padding-bottom: 2.5%;
+  flex:1;
+}
+
+.header { 
+ background-color: #a8d0e6; 
+ position: relative;
+}
+
+.btn {
+  background-color: #28a745 ;
+  color: white;
+}
+
+.list-group-item-action:hover { 
+  background-color: lightblue;
+}
+
+.shadow-sm {
+  background-color: #7e685a;
+  border-radius: 0%;
+}
+
+img { 
+  background-color: #8fc1e3; /* ede8f5 */
+}
+
+.card { 
+  background-color: #176aa1;
+  border-color: #176aa1;
+}
+
+.card.shadow-sm {
+  border-radius: 50%;
+}
+
+.card-body {
+  /*background: linear-gradient(rgb(37, 232, 190), rgb(156, 198, 156));*/
+  background: rgb(29,130,248);
+  background: linear-gradient(266deg, rgba(29,130,248,1) 50%, rgba(24,55,114,1) 92%);
+  padding: 0rem ; /* v scss je padding 1.25rem do včech stran */
+  border-radius: 0 0 20px 20px;  /* Horní levý, horní pravý, dolní pravý, dolní levý */
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.bd-placeholder-img { 
+  border-radius: 20px 20px 0 0;  /* Horní levý, horní pravý, dolní pravý, dolní levý */
+}
+
+.card-text { 
+ text-align: center;
+ letter-spacing: 1.7px;
+ padding: 5px 0;
+}
+
+h2 { 
+ font-size: 2.2rem;
+ color:rgb(27, 27, 27)
+}
+
+a { 
+  text-decoration: none; 
+  color: black; 
+}
+
+a:hover { 
+  text-decoration: none; 
+  color: rgb(81, 76, 76);
+}
+
+.down {
+  text-decoration: none; 
+}
+
+.breadcrumb {
+
+  top: 87%; 
+  left: 2%;
+padding: 0 0;
+ margin-bottom: 0;
+ margin-left: 0;
+  background-color: #a8d0e6; 
+}
+
+form {
+  padding-bottom: 5.3%; /*3.5% */
+}
+
+.bread {
+  padding-bottom: 0%; /* 1.65% */
+}
+
+footer { 
+  background-color:rgb(61, 61, 61); /*#4c495e*/
+  color: grey;
+  text-align: center;
+  
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #4DA167; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: lighten(#4DA167, 100%);
+}
+
+
+@media (min-width: 374px) {
+  #suggestions { 
+      top: 37% !important
+    }
+}
+
+
+
+@media (max-width: 547px) {
+
+  h1 {
+    font-size: 215%;
+  }
+  
+  .sez {
+    width: 55%;
+  }
+
+  .krk {
+    width: 51%;
+  }
+
+  .stred {
+    width: 55%;
+  }
+
+  .pard {
+    width: 53%;
+  }
+
+  
+}
+
+
+@media (min-width: 576px) {
+  .container {
+      max-width: 540px;
+  }
+  #suggestions { 
+      top: 65% !important
+    }
+}
+
+@media (max-width: 767px) {
+  .down {
+    margin-top: 5%;
+  }
+
+  .downa {
+    margin-top: 5%;
+  }
+
+  
+}
+
+@media (min-width: 768px) {
+  .down {
+    margin-top: 5%;
+  }
+
+  .downa{
+    margin-top: 3.5%; /* 1.8 */
+  }
+
+  .container {
+    max-width: 720px;
+  }
+
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+
+  form {
+    padding-bottom: 3.5%; 
+  }
+  
+  .bread {
+    padding-bottom: 1.65%; 
+  }
+
+  
+}
+
+@media (min-width: 992px) {
+      .container {
+          max-width: 960px;
+      }
+
+      .downa{
+        margin-top: 3%; /* 1.8 */
+      }
+
+   
+
+      .bread-position {
+        position: absolute;
+        top: -7.8%;  /* Umístí prvek na vrchol rodiče */
+        left: 13%;  /* Umístí levý okraj prvku na střed rodiče */
+      }
+
+      .bread-position-2 {
+        position: absolute;
+        top: -2.75%;  /* Umístí prvek na vrchol rodiče */
+        left: 13%;  /* Umístí levý okraj prvku na střed rodiče */
+      }
+}
+
+@media (min-width: 1200px) {
+      .container {
+        max-width: 1320px;
+      }
+
+      #suggestions { 
+      top: 50% !important
+    }
+
+      .breadcrumb {
+        /* position: absolute;*/ /*pokud je absolute position tak není v containeru*/
+          margin-left: 13%;
+        /* transform: translateX(-50%);*/
+         /* padding: .50rem 1rem;  */ /* .50rem 1rem; */ /*bs: .75rem 1rem*/
+      }
+    }
+
+
+  
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
